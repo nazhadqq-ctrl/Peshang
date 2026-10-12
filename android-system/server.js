@@ -134,7 +134,7 @@ function clearFailedLogin(clientIp) {
 // Default Config Structure (Stored in local config.json on the server/client)
 let dbConfig = {
   server: '62.201.232.190',
-  database: 'Taqega',
+  database: 'Peshang',
   user: 'sa',
   password: 'Nazhad@5759',
   port: 1433,
@@ -143,9 +143,9 @@ let dbConfig = {
   savedServers: [
     {
       id: 'srv-185-181-111-17',
-      name: '62.201.232.190 (Taqega)',
+      name: '62.201.232.190 (Peshang)',
       server: '62.201.232.190',
-      database: 'Taqega',
+      database: 'Peshang',
       user: 'sa',
       password: 'Nazhad@5759',
       port: 1433,
@@ -230,7 +230,7 @@ async function initSqlServer(config) {
     const finalServer = (rawServer && !rawServer.includes('*') && !rawServer.includes('$')) ? rawServer : '62.201.232.190';
 
     const rawDb = config.database || process.env.DB_DATABASE;
-    const finalDb = (rawDb && !rawDb.includes('*') && !rawDb.includes('$')) ? rawDb : 'Taqega';
+    const finalDb = (rawDb && !rawDb.includes('*') && !rawDb.includes('$')) ? rawDb : 'Peshang';
 
     const rawUser = config.user || process.env.DB_USER;
     const finalUser = (rawUser && !rawUser.includes('*') && !rawUser.includes('$')) ? rawUser : 'sa';
@@ -768,7 +768,7 @@ const server = http.createServer((req, res) => {
 
       try {
         dbConfig.server = String(data.server || '62.201.232.190').trim();
-        dbConfig.database = String(data.database || 'Taqega').trim();
+        dbConfig.database = String(data.database || 'Peshang').trim();
         dbConfig.user = String(data.user || 'sa').trim();
         if (data.password !== undefined && data.password !== '') {
           dbConfig.password = String(data.password);

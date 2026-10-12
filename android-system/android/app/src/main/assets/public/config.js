@@ -22,7 +22,7 @@ window.APP_CONFIG = {
   // زانیارییە سەرەکییەکانی بنکەی دراوەی ئێس کیو ئێڵ
   sqlServer: {
     server: "62.201.232.190",
-    database: "Taqega",
+    database: "Peshang",
     user: "sa",
     port: 1433
   },

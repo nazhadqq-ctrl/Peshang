@@ -8,7 +8,7 @@ function replaceInFile(filePath) {
     const originalContent = content;
     
     content = content.replace(/185\.181\.111\.17/g, "62.201.232.190");
-    content = content.replace(/image_coart/g, "Taqega");
+    content = content.replace(/Peshang/g, "Peshang");
     content = content.replace(/"ASA"/g, '"sa"');
     content = content.replace(/'ASA'/g, "'sa'");
     content = content.replace(/Nazhad9999/g, "Nazhad@5759");

@@ -607,13 +607,13 @@ document.addEventListener('DOMContentLoaded', () => {
       // Offline fallback: Populate with known default configuration
       const fallbackSql = (window.APP_CONFIG && window.APP_CONFIG.sqlServer) || {
         server: '62.201.232.190',
-        database: 'Taqega',
+        database: 'Peshang',
         user: 'sa',
         port: 1433
       };
       if (document.getElementById('cfg-server-ip') && !document.getElementById('cfg-server-ip').value) {
         document.getElementById('cfg-server-ip').value = fallbackSql.server || '62.201.232.190';
-        document.getElementById('cfg-database').value = fallbackSql.database || 'Taqega';
+        document.getElementById('cfg-database').value = fallbackSql.database || 'Peshang';
         document.getElementById('cfg-user').value = fallbackSql.user || 'sa';
         document.getElementById('cfg-port').value = fallbackSql.port || 1433;
       }
@@ -2488,7 +2488,7 @@ document.addEventListener('DOMContentLoaded', () => {
   </style>
 </head>
 <body>
-  <div class="watermark">TAQEGA</div>
+  <div class="watermark">PESHANG</div>
 
   <div class="no-print-toolbar">
     <div style="font-size:1rem; font-weight:700;">🖨️ ڕاپۆرتی پشکنینی ئۆتۆمبێل — Record #${r.id} (A4 One Page)</div>
@@ -2570,7 +2570,7 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
 
     <div class="print-stamp" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem; font-size:0.75rem; color:#64748b; border-top:1px dashed #cbd5e1; padding-top:0.6rem; margin-top:1rem;">
-      <div>Car Records System — Taqega Database — Page 1 of 1 — ${printTime}</div>
+      <div>Car Records System — Peshang Database — Page 1 of 1 — ${printTime}</div>
       <div style="direction:rtl; font-weight:600;">دیزاین و پەرەپێدان: نەژاد قادر محمد — هاتووچۆی سلێمانی</div>
     </div>
   </div>
