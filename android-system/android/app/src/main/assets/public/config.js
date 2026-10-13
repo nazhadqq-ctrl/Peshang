@@ -21,9 +21,9 @@ window.APP_CONFIG = {
   // Default SQL Server Database parameters (Database connection credentials are securely stored on backend server)
   // زانیارییە سەرەکییەکانی بنکەی دراوەی ئێس کیو ئێڵ
   sqlServer: {
-    server: "62.201.232.190",
+    server: "185.181.111.17",
     database: "Peshang",
-    user: "sa",
+    user: "ASA",
     port: 1433
   },
 
@@ -37,3 +37,4 @@ window.APP_CONFIG = {
   appName: "تۆمارکردنی زانیاری ئۆتۆمبێل",
   appVersion: "1.3.5"
 };
+

@@ -276,21 +276,21 @@ function clearFailedLogin(clientIp) {
 
 // Default Config Structure (Stored in local config.json on the server/client)
 let dbConfig = {
-  server: '62.201.232.190',
+  server: '185.181.111.17',
   database: 'Peshang',
-  user: 'sa',
-  password: 'Nazhad@5759',
+  user: 'ASA',
+  password: 'Nazhad9999',
   port: 1433,
   windowsAuth: false,
   setupCompleted: true,
   savedServers: [
     {
       id: 'srv-185-181-111-17',
-      name: '62.201.232.190 (Peshang)',
-      server: '62.201.232.190',
+      name: '185.181.111.17 (Peshang)',
+      server: '185.181.111.17',
       database: 'Peshang',
-      user: 'sa',
-      password: 'Nazhad@5759',
+      user: 'ASA',
+      password: 'Nazhad9999',
       port: 1433,
       windowsAuth: false
     }
@@ -370,16 +370,16 @@ async function initSqlServer(config) {
     try { await sql.close(); } catch (e) {}
 
     const rawServer = config.server || process.env.DB_SERVER;
-    const finalServer = (rawServer && !rawServer.includes('*') && !rawServer.includes('$')) ? rawServer : '62.201.232.190';
+    const finalServer = (rawServer && !rawServer.includes('*') && !rawServer.includes('$')) ? rawServer : '185.181.111.17';
 
     const rawDb = config.database || process.env.DB_DATABASE;
     const finalDb = (rawDb && !rawDb.includes('*') && !rawDb.includes('$')) ? rawDb : 'Peshang';
 
     const rawUser = config.user || process.env.DB_USER;
-    const finalUser = (rawUser && !rawUser.includes('*') && !rawUser.includes('$')) ? rawUser : 'sa';
+    const finalUser = (rawUser && !rawUser.includes('*') && !rawUser.includes('$')) ? rawUser : 'ASA';
 
     const rawPass = config.password || process.env.DB_PASSWORD;
-    const finalPassword = (rawPass && !rawPass.includes('*') && !rawPass.includes('$')) ? rawPass : 'Nazhad@5759';
+    const finalPassword = (rawPass && !rawPass.includes('*') && !rawPass.includes('$')) ? rawPass : 'Nazhad9999';
 
     const connConfig = {
       server: finalServer,
