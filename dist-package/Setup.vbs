@@ -22,26 +22,26 @@ iconPath = installDir & "\app.ico"
 desktopPath = wshShell.SpecialFolders("Desktop")
 programsPath = wshShell.SpecialFolders("Programs")
 
-Set shortcut = wshShell.CreateShortcut(desktopPath & "\تۆماری تاقیگەکان.lnk")
+Set shortcut = wshShell.CreateShortcut(desktopPath & "\تاقیگەی پێشەنگ.lnk")
 shortcut.TargetPath = "wscript.exe"
 shortcut.Arguments = """" & targetVbs & """"
 shortcut.WorkingDirectory = installDir
 shortcut.IconLocation = iconPath & ",0"
-shortcut.Description = "تۆماری تاقیگەکان — دیزاین و پرۆگرامسازی: NAZHAD Q. MAHAMMED"
+shortcut.Description = "تاقیگەی پێشەنگ — دیزاین و پرۆگرامسازی: NAZHAD Q. MAHAMMED"
 shortcut.Save
 
-Set menuShortcut = wshShell.CreateShortcut(programsPath & "\تۆماری تاقیگەکان.lnk")
+Set menuShortcut = wshShell.CreateShortcut(programsPath & "\تاقیگەی پێشەنگ.lnk")
 menuShortcut.TargetPath = "wscript.exe"
 menuShortcut.Arguments = """" & targetVbs & """"
 menuShortcut.WorkingDirectory = installDir
 menuShortcut.IconLocation = iconPath & ",0"
-menuShortcut.Description = "تۆماری تاقیگەکان — دیزاین و پرۆگرامسازی: NAZHAD Q. MAHAMMED"
+menuShortcut.Description = "تاقیگەی پێشەنگ — دیزاین و پرۆگرامسازی: NAZHAD Q. MAHAMMED"
 menuShortcut.Save
 
 wshShell.CurrentDirectory = installDir
 wshShell.Run """" & targetVbs & """", 0, False
 
 MsgBox "✅ بە سەرکەوتوویی دامەزرا!" & vbCrLf & vbCrLf & _
-       "ئایکۆنی پرۆگرامەکە بەناوی (تۆماری تاقیگەکان) خرایە سەر ڕووی شاشە (Desktop) و لیستی پرۆگرامەکان." & vbCrLf & _
+       "ئایکۆنی پرۆگرامەکە بەناوی (تاقیگەی پێشەنگ) خرایە سەر ڕووی شاشە (Desktop) و لیستی پرۆگرامەکان." & vbCrLf & _
        "دیزاین و پرۆگرامسازی: NAZHAD Q. MAHAMMED" & vbCrLf & _
-       "پرۆگرامەکە ئێستا کرایەوە.", vbInformation, "تۆماری تاقیگەکان"
+       "پرۆگرامەکە ئێستا کرایەوە.", vbInformation, "تاقیگەی پێشەنگ"
